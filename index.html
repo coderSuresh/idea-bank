@@ -1,157 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>Idea Bank</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="js/app.js" defer></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <header class="flex">
-        <h1 class="logo">
-            Idea<span>Bank</span>
-        </h1>
+      <h1 class="logo">Idea<span>Bank</span></h1>
 
-        <button class="btn open-modal">
-            Submit Idea
-        </button>
+      <button class="btn open-modal">Submit Idea</button>
     </header>
 
     <main>
 
-        <!-- ===== modal ===== -->
-        <section class="modal-background flex">
-            <div class="modal">
-                <div class="modal-header flex">
-                    <h2>Submit your idea</h2>
-                    <button class="close-modal">
-                        <img src="images/ic_close.svg" alt="close modal">
-                    </button>
-                </div>
+      <!-- ===== modal ===== -->
+      <section class="modal-background flex">
+        <div class="modal">
+          <div class="modal-header flex">
+            <h2>Submit your idea</h2>
+            <button class="close-modal">
+              <img src="images/ic_close.svg" alt="close modal" />
+            </button>
+          </div>
 
-                <form action="#" class="modal-form">
-                    <div>
-                        <label for="idea">Idea</label>
-                        <textarea name="idea" id="idea" cols="30" rows="10"></textarea>
-                    </div>
-
-                    <div>
-                        <label for="tags">Tags</label>
-                        <input type="text" name="tags" id="tags">
-                    </div>
-
-                    <div class="modal-btn flex">
-                        <button class="btn btn-cancel">Cancel</button>
-                        <button class="btn">Submit</button>
-                    </div>
-                </form>
+          <form action="#" class="modal-form">
+            <div>
+              <label for="idea">Idea</label>
+              <textarea name="idea" id="idea" cols="30" rows="10"></textarea>
             </div>
-        </section>
 
-        <!-- ===== filter section ===== -->
-        <section class="flex">
-            <h2>Most recent</h2>
+            <div>
+              <label for="tags">Tags</label>
+              <input type="text" name="tags" id="tags" />
+            </div>
 
-           <form action="#">
-                <select name="filter" id="filter">
-                    <option value="most-recent">Most recent</option>
-                    <option value="most-voted">Most voted</option>
-                    <option value="least-voted">Least voted</option>
-                </select>
-           </form>
+            <div>
+              <label for="profile-link">Twitter link</label>
+              <input type="text" name="profile-link" id="profile-link" />
+            </div>
 
-        </section>
-
-        <!-- ===== ideas section ===== -->
-        <div class="idea-container">
-            <article class="idea-card flex">
-                <div class="voting flex">
-                    <button class="upvote">
-                        <img src="images/ic_cheveron.svg" alt="upvote">
-                    </button>
-                    <span class="votes">000</span>
-                    <button class="downvote">
-                        <img src="images/ic_cheveron.svg" alt="downvote">
-                    </button>
-                </div>
-
-                <div>
-                    <p class="idea-card_date">
-                        2021-08-20
-                    </p>
-                    <p class="idea">
-                        A startup that aims to make driving easier by predicting how long it will take you to get a destination. It currently
-                        has 1,000 users and is funded by a $20 million investment from Blackstone.
-                    </p>
-
-                    <p class="tags">
-                        Tags: <span class="tag">finance</span>
-                    </p>
-                </div>
-
-            </article>
-
-            <article class="idea-card flex">
-                <div class="voting flex">
-                    <button class="upvote">
-                        <img src="images/ic_cheveron.svg" alt="upvote">
-                    </button>
-                    <span class="votes">000</span>
-                    <button class="downvote">
-                        <img src="images/ic_cheveron.svg" alt="downvote">
-                    </button>
-                </div>
-
-                <div>
-                    <p class="idea-card_date">
-                        2021-08-20
-                    </p>
-                    <p class="idea">
-                        A startup that aims to make driving easier by predicting how long it will take you to get a destination. It currently
-                        has 1,000 users and is funded by a $20 million investment from Blackstone.
-                    </p>
-
-                    <p class="tags">
-                        Tags: <span class="tag">innovation</span>
-                    </p>
-                </div>
-
-            </article>
-
-            <article class="idea-card flex">
-                <div class="voting flex">
-                    <button class="upvote">
-                        <img src="images/ic_cheveron.svg" alt="upvote">
-                    </button>
-                    <span class="votes">000</span>
-                    <button class="downvote">
-                        <img src="images/ic_cheveron.svg" alt="downvote">
-                    </button>
-                </div>
-
-                <div>
-                    <p class="idea-card_date">
-                        2021-08-20
-                    </p>
-                    <p class="idea">
-                        A startup that aims to make driving easier by predicting how long it will take you to get a destination. It currently
-                        has 1,000 users and is funded by a $20 million investment from Blackstone.
-                    </p>
-
-                    <p class="tags">
-                        Tags: <span class="tag">tech</span>
-                    </p>
-                </div>
-
-            </article>
+            <div class="modal-btn flex">
+              <button class="btn btn-cancel">Cancel</button>
+              <button class="btn">Submit</button>
+            </div>
+          </form>
         </div>
+      </section>
 
+      <!-- ===== filter section ===== -->
+      <section class="flex">
+        <h2>Most recent</h2>
+
+        <form action="#">
+          <select name="filter" id="filter">
+            <option value="most-recent">Most recent</option>
+            <option value="most-voted">Most voted</option>
+            <option value="least-voted">Least voted</option>
+          </select>
+        </form>
+      </section>
+
+      <!-- ===== ideas section ===== -->
+      <div class="idea-container">
+        <article class="idea-card flex">
+          <div class="voting flex">
+            <button class="upvote">
+              <img src="images/ic_cheveron.svg" alt="upvote" />
+            </button>
+            <span class="votes">000</span>
+            <button class="downvote">
+              <img src="images/ic_cheveron.svg" alt="downvote" />
+            </button>
+          </div>
+
+          <div>
+            <div class="flex justify-start">
+              <p class="idea-card_date">2021-08-20</p>
+              <p>by <a href="#" class="profile-link">@username</a></p>
+            </div>
+            <p class="idea">
+              A startup that aims to make driving easier by predicting how long
+              it will take you to get a destination. It currently has 1,000
+              users and is funded by a $20 million investment from Blackstone.
+            </p>
+
+            <button class="report-btn">Report</button>
+
+            <p class="tags">Tags: <span class="tag">finance</span></p>
+          </div>
+        </article>
+
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>

@@ -10,6 +10,7 @@
 :root {
     --primary: #B80000;
     --primary-transparent: rgba(184, 0, 0, 0.2);
+    --blue: #1C02EF;
     --background: #EFEFEF;
     --card-background: #FFFFFF;
     --black: #1E1E1E;
@@ -19,7 +20,7 @@ body {
     background-color: var(--background);
     color: var(--black);
     font-family: 'Poppins', sans-serif;
-    font-size: 66.25%;
+    font-size: 70%;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -28,6 +29,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
 }
 
 header {
@@ -128,6 +135,12 @@ main {
     }
 }
 
+.report-btn {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--blue);
+}
+
 /* ====== modal ====== */
 .modal-background {
     background-color: rgba(0, 0, 0, 0.5);
@@ -161,7 +174,7 @@ main {
     background-color: var(--card-background);
     border-radius: 4px;
     padding: 1rem;
-    width: 100%;
+    width: 95%;
     max-width: 400px;
     margin: 0 auto;
 }
