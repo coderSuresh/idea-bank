@@ -72,6 +72,11 @@ main {
     }
 }
 
+#filter-label {
+    opacity: 0;
+    font-size: 0;
+}
+
 #filter {
     background-color: var(--card-background);
     border-radius: 4px;
